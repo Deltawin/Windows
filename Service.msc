@@ -1,4 +1,4 @@
-Gérer les services via le registre.
+Gérer les services via le registre. HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\
 4 = Disabled
 3 = Manual
 2 = Automatic
