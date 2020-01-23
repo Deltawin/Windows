@@ -23,4 +23,9 @@ REG ADD HKLM\SYSTEM\CurrentControlSet\Services\TimeBrokerSvc /v Start /t REG_DWO
 
 echo desactiver cortana
 REG ADD HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows" "Search /v AllowCortana /t REG_DWORD /d 0 /f
+
+echo desactiver smartscreen
+REG ADD HKLM\SOFTWARE\Policies\Microsoft\Windows\System /v EnableSmartScreen /t REG_DWORD /d 0 /f
+RED ADD HLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer /v SmartScreenEnabled /t REG_SZ /D Off /f
+
 pause
