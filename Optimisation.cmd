@@ -15,6 +15,7 @@ REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer /v AlwaysUnloadD
 echo Desactiver le mode hibernation
 powercfg -h off
 
+Ameliorer les capacite du processeur
 REG ADD HKLM\SOFTWARE\Microsoft\Windows" "NT\CurrentVersion\Multimedia\SystemProfile /v SystemResponsiveness /t REG_DWORD /d 0 /f
 
 echo Desactiver RuntimeBroker
