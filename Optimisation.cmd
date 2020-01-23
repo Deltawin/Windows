@@ -15,9 +15,11 @@ REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer /v AlwaysUnloadD
 echo Desactiver le mode hibernation
 powercfg -h off
 
-echo 14
-REG ADD HKLM\SOFTWARE\Microsoft\Windows_NT\CurrentVersion\Multimedia\SystemProfile /v SystemResponsiveness /t REG_DWORD /d 0 /f
+REG ADD HKLM\SOFTWARE\Microsoft\Windows" "NT\CurrentVersion\Multimedia\SystemProfile /v SystemResponsiveness /t REG_DWORD /d 0 /f
 
 echo Desactiver RuntimeBroker
 REG ADD HKLM\SYSTEM\CurrentControlSet\Services\TimeBrokerSvc /v Start /t REG_DWORD /d 4 /f
+
+echo desactiver cortana
+REG ADD HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows" "Search /v AllowCortana /t REG_DWORD /d 0 /f
 pause
