@@ -18,7 +18,4 @@ powercfg -h off
 Ameliorer les capacite du processeur
 REG ADD HKLM\SOFTWARE\Microsoft\Windows" "NT\CurrentVersion\Multimedia\SystemProfile /v SystemResponsiveness /t REG_DWORD /d 0 /f
 
-echo desactiver cortana
-REG ADD HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows" "Search /v AllowCortana /t REG_DWORD /d 0 /f
-
 pause
