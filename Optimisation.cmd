@@ -21,4 +21,10 @@ REG ADD HKLM\SOFTWARE\Microsoft\Windows" "NT\CurrentVersion\Multimedia\SystemPro
 echo espace reserve
 REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\ReserveManager /v ShippedWithReserves /t REG_DWORD /d 0 /f
 
+Désactiver ndu
+REG ADD HKLM\SYSTEM\CurrentControlSet\Services\ /v Ndu /t REG_DWORD /d 4 /f
+
+Désactiver prefetch & superfetch
+REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters /v EnablePrefetcher /t REG_DWORD /d 0 /f
+
 pause
